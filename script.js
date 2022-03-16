@@ -1,3 +1,8 @@
+const clear = document.getElementById("erase");
+const label = document.getElementById("output");
+
+clear.addEventListener("click", clearDisplay);
+
 function add(a, b) {
   return a + b;
 }
@@ -25,4 +30,8 @@ function operate(operator, a, b) {
     case "/":
       return divide(a / b);
   }
+}
+
+function clearDisplay() {
+  label.textContent = 0;
 }
