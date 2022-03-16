@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  background: lightslategray;
+}
+.container {
+  background: lightgray;
+  width: 400px;
+  height: 560px;
+  margin: 100px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  padding: 20px;
+}
+
+.display {
+  width: 358px;
+  height: 100px;
+  background: white;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#output {
+  font-size: 28px;
+}
+
+.clear {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+#erase {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.numbers {
+  padding: 20px 30px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
