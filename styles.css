@@ -6,7 +6,9 @@
 }
 
 body {
-  background: lightslategray;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, rgb(97, 187, 218), rgb(165, 37, 165));
 }
 .container {
   background: lightgray;
@@ -59,14 +61,15 @@ body {
   gap: 10px;
 }
 
-.numbers {
+button {
   padding: 20px 30px;
   border: 2px solid black;
   border-radius: 6px;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
-.numbers:hover {
+button:hover {
   cursor: pointer;
   background: lightgray;
 }
