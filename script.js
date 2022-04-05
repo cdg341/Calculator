@@ -1,14 +1,12 @@
 const clear = document.getElementById("erase");
 const display = document.getElementById("output");
 const numberButtons = document.querySelector(".numpad").children;
-const equals = document.getElementById("equals");
 const allSymbols = ["+", "-", "x", "÷", "="];
 
 let firstValue = "";
 let secondValue = "";
 let symbol = "";
 let result = "";
-let calculated = false;
 
 //Functions for the operator equations
 function add(firstValue, secondValue) {
@@ -51,7 +49,6 @@ const calculate = () => {
 };
 
 //Loop through the buttons clicked and assign values
-
 for (let button of numberButtons) {
   button.addEventListener("click", () => {
     const btnValue = button.textContent;
@@ -76,7 +73,6 @@ for (let button of numberButtons) {
     // don't add the equal-sign to the display
     if (btnValue !== "=") {
       display.textContent += btnValue;
-      calculated = true;
     }
   });
 }
