@@ -57,7 +57,7 @@ for (let button of numberButtons) {
     const btnValue = button.textContent;
     const btnValueIsSymbol = allSymbols.includes(btnValue);
 
-    if (!secondValue && btnValue === "=") return null;
+    if (!secondValue && btnValue === "=") display.textContent = "Error";
 
     if (firstValue && btnValueIsSymbol) {
       secondValue && calculate();
